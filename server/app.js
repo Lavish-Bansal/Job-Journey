@@ -17,8 +17,8 @@ app.use(express.static("public"));
 app.use(cookieParser());
 
 // universal route
-app.get("/api/v1", (req, res) => {
-  res.json("Welcome!");
+app.get("/", (req, res) => {
+  res.send("Welcome!");
 });
 
 // routes import
